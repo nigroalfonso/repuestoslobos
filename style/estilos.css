@@ -27,6 +27,17 @@
     background-color: grey;
 }
 
+.cuerpo{
+    background-color: bisque;
+    height: 500px;
+}
+
+.cuerpo article{
+    background-color: grey;
+    width: 100px;
+    padding: 20px;
+    display: inline-block;
+}
 .pieDePagina {
     background-color: gray;
 }
