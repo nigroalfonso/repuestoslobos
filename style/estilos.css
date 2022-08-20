@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.cabecera{
+    background-color: black;
+}
+
+.cabecera__nav{
+    /*width: 500px;*/
+    background-color: black;
+    list-style: none; 
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+}
+
+.cabecera__nav li{
+    width: 100px;
+    color: white;
+    list-style: none; 
+    display: inline-block;
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: grey;
+}
+
+.pieDePagina {
+    background-color: gray;
+}
