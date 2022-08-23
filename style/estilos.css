@@ -1,14 +1,29 @@
-*{
+* {
     padding: 0;
     margin: 0;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
 }
 
 .cabecera{
     background-color: black;
+    display: flex;
+}
+
+.cabecera__logo {
+    width: 231px;
+    height: 70px;
+    background-image: url("../image/logo2.png") ;
+    background-size: cover;
+    display: inline-block;
 }
 
 .cabecera__nav{
-    /*width: 500px;*/
+    width: 1000px;
+    height: 50px;
     background-color: black;
     list-style: none; 
     display: inline-block;
@@ -16,8 +31,9 @@
     padding: 10px;
 }
 
-.cabecera__nav li{
-    width: 100px;
+
+.cabecera__nav ul li{
+    width: 125px;
     color: white;
     list-style: none; 
     display: inline-block;
@@ -27,9 +43,15 @@
     background-color: grey;
 }
 
+.cabecera__nav ul li a{
+    color: white;
+    font-weight: bold;
+}
+
 .cuerpo{
     background-color: bisque;
     height: 500px;
+    padding: 20px;
 }
 
 .cuerpo article{
@@ -37,7 +59,25 @@
     width: 100px;
     padding: 20px;
     display: inline-block;
+    text-align: center;
+    border-radius: 10px;
 }
 .pieDePagina {
     background-color: gray;
+    text-align: center;
+    
 }
+
+.pieDePagina__redes {
+    text-align: center;
+}
+
+.pieDePagina img{
+    height: 16px;
+    width: 16px;
+}
+
+ /*@font-face {
+    font-family: ;
+    src: url();
+}*/
