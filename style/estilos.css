@@ -4,13 +4,29 @@
     font-family: sans-serif;
 }
 
+.grid {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";    
+    grid-template-rows: 1fr 6fr 1fr;
+    grid-template-columns: 1fr;
+    height: 100vh;
+  }
+
 a {
     text-decoration: none;
 }
 
-.cabecera{
+header {
+    grid-area: header;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     background-color: #212529;
     display: flex;
+    /*border: 5px solid;*/
 }
 
 .cabecera__logo {
@@ -18,7 +34,7 @@ a {
     height: 70px;
     background-image: url("../image/inicio_logo.jpg") ;
     background-size: cover;
-    display: inline-block;
+    display: inline-block;    
 }
 
 .cabecera__nav{
@@ -40,7 +56,7 @@ a {
     margin-left: 10px;
     padding: 5px;
     border-radius: 5px;
-    background-color: #212529;
+    background-color: #212529;    
 }
 
 .cabecera__nav ul li a{
@@ -49,13 +65,20 @@ a {
     /*font-weight: bold;*/
 }
 
-.cuerpo{
+main {
+    grid-area: main;
+    flex-direction: row;
     background-color: bisque;
     background-image: url("../image/img-inicio.jpg") ;
-    background-size: cover;
-    height: 750px;
+    background-repeat: no-repeat;
+    background-size: cover;    
     padding: 20px;
+    height: auto;
+    display: flex;
+    /*border-left: 5px solid;    
+    border-right: 5px solid;    */
 }
+
 
 .cuerpo2{
     background-color: bisque;
@@ -78,6 +101,8 @@ a {
     background-color: #212529;
     color: white;
     text-align: center;
+    height: 150px;
+    border-radius: 20px;
 }
 
 .somos h2{
@@ -93,38 +118,57 @@ a {
     width: 30px;
 }
 
+/*
 .pieDePagina {
     background-color: #212529;
     text-align: center;
     width: auto;
     
+} */
+
+footer {
+    grid-area: footer;
+    flex-direction: column;
+    background-color: #212529;
+    text-align: center;
+    width: auto;
+    display: flex;
+    /*border: 5px solid;*/
 }
 
-.pieDePagina h2{
+footer h2{
     text-align: center;
     color: #d50817;
     padding: 20px 0px 20px 0px;
 }
 
-.pieDePagina p{
+footer p{
     text-align: center;
     color: white;
-    padding: 5px 0px 5px 0px;
+    padding: 5px 0px 5px 0px;    
 }
 
-.pieDePagina section {
-    /*display: flex;*/
-    text-align: center;
+footer section {
+    text-align: center;    
 }
 
 .pieDePagina__redes {
-    text-align: center;
+    display: flex;   
+    align-items: center;     
     list-style: none;
+    justify-content: center;
+    padding-bottom: 20px;
 }
 
-.pieDePagina__redes img{
+.pieDePagina__redes li {
+    margin: 0px 20px 0px 20px;
+}
+
+.pieDePagina__redes li img{
     height: 32px;
     width: 32px;
+    display: inline-block;
+    text-align: center;
 }
 
 .ubicacion__map {
@@ -135,7 +179,7 @@ a {
     padding: 20px;
     margin: 20px;
     text-align: center;
-    color: #d50817;
+    color: #d50817;    
 }
 
 .ubicacion__descripcion img{
@@ -148,8 +192,119 @@ a {
     width: 100%;
 }
 
+.servicios{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.servicios article{
+    display: inline-block;
+}
+
 
  /*@font-face {
     font-family: ;
     src: url();
 }*/
+
+
+@media screen and (max-width: 1024px) {
+.grid {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";    
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-columns: 1fr;
+    height: 100vh;
+    row-gap: 0px;
+    column-gap: 0px;
+    }
+
+    header {
+    grid-area: header;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;        
+    display: flex;    
+    }
+    
+    .cabecera__nav ul li{
+    padding: 0px;
+    width: 100px;
+    }
+
+    .somos {
+        height: 200px;
+        overflow: scroll;
+    }
+
+}
+
+
+@media screen and (max-width: 580px) {
+.grid {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";    
+    grid-template-rows: 3fr 3fr 1fr;
+    grid-template-columns: 1fr;
+    height: 100vh;
+    row-gap: 0px;
+    column-gap: 0px;
+    }
+
+    header {
+    grid-area: header;
+    flex-direction: column;
+    justify-content:space-around;    
+    align-items: center;        
+    display: flex;
+    }
+
+    .somos {
+        height: 300px;
+        overflow: scroll;
+    }
+
+   /* .cabecera__nav{
+        width: 90%;
+    }   */   
+  }
+
+  @media screen and (max-width: 300px) {
+    .grid {
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";    
+        grid-template-rows: 3fr 3fr 1fr;
+        grid-template-columns: 1fr;
+        height: 100vh;
+        row-gap: 0px;
+        column-gap: 0px;
+        }
+    
+        header {
+        grid-area: header;
+        flex-direction: column;
+        /*justify-content:space-around;*/
+        justify-content: start;
+        align-items: center;        
+        display: flex;    
+        }
+    
+        .cabecera__nav{
+            width: 90%;
+        }      
+
+        .somos {
+            height: 380px;
+            overflow: scroll;
+        }
+      }
