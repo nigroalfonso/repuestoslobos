@@ -5,31 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/estilos.css">
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <title>Repuestos Lobos</title>
 </head>
-<body class="grid">    
-    <header>        
-        <section class="cabecera__logo"></section>
-        <nav class="cabecera__nav">
-            <ul >
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="#">NOSOTROS</a></li>
-                <li><a href="./servicios.html">SERVICIOS</a></li>
-                <li><a href="./contacto.html">CONTACTO</a></li>
-                <li><a href="./ubicacion.html">UBICACIÓN</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="cuerpo"></section> 
-        <!--<section class="cuerpo2"></section>-->      
-        <section class="somos" >
-            <h2>Quienes somos</h2>
-            <p>Repuestos Lobos es una empresa con 25 años de trayectoria en la venta de repuestos y accesorios para autos de todas las marcas. Nuestro personal especializado tiene la experiencia necesaria para brindar a todos los clientes el mejor servicio. Llegamos a toda la localidad de Lobos y alrededores.
-                Para nuestra empresa los clientes son lo más importante, por esta razón, trabajamos bajo los criterios de responsabilidad, puntualidad y honestidad. Contamos con repuestos para autos de colección de la mejor calidad. No dude en visitar nuestras instalaciones</p>
+<body>    
+    <header>
+        <section class="container-fluid">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <section class="cabecera__logo"></section>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo01"
+                        aria-controls="navbarTogglerDemo01"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                <span class="navbar-toggler-icon"></span>
+                </button>   
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger text-danger" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger text-danger" href="#">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger text-danger" href="./servicios.html">SERVICIOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger text-danger" href="./contacto.html">CONTACTO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger text-danger" href="./ubicacion.html">UBICACIÓN</a>
+                        </li>
+                    </ul>   
+                </div>
+              </nav>            
+        </section>
+    </header>    
+    <main class="container-fluid">
+        <!--<section class="cuerpo"></section> --> 
+        <!--<section class="cuerpo2"></section>-->     
+        <section class="row h-75">
+            <div class="row">
+                <h2 class="text-center text-white">Quienes somos</h2>    
+            </div>
+            <div class="row">
+                <p class="text-center text-white">Repuestos Lobos es una empresa con 25 años de trayectoria en la venta de repuestos y accesorios para autos de todas las marcas. Nuestro personal especializado tiene la experiencia necesaria para brindar a todos los clientes el mejor servicio. Llegamos a toda la localidad de Lobos y alrededores.
+                    Para nuestra empresa los clientes son lo más importante, por esta razón, trabajamos bajo los criterios de responsabilidad, puntualidad y honestidad. Contamos con repuestos para autos de colección de la mejor calidad. No dude en visitar nuestras instalaciones</p>        
+            </div>
         </section>
     </main>
-    <footer>
+    <footer class="container-fluid">
         <h2>Nuestras Redes</h2>
         <section>
             <ul class="pieDePagina__redes">

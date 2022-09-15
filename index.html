@@ -4,26 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/estilos.css">
+    <link rel="stylesheet" href="style/estilos.css">    
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <title>Repuestos Lobos</title>
 </head>
-<body class="grid">
-    <header>     
-        <section class="cabecera__logo"></section>
-        <nav class="cabecera__nav">
-            <ul >
-                <li><a href="#">INICIO</a></li>
-                <li><a href="./pages/nosotros.html">NOSOTROS</a></li>
-                <li><a href="./pages/servicios.html">SERVICIOS</a></li>
-                <li><a href="./pages/contacto.html">CONTACTO</a></li>
-                <li><a href="./pages/ubicacion.html">UBICACIÓN</a></li>
-            </ul>
-        </nav>
+<body>
+    <header>
+        <section class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <section class="cabecera__logo"></section>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01"
+                    aria-controls="navbarTogglerDemo01"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                <span class="navbar-toggler-icon"></span>
+                </button>   
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger text-danger" href="#">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger text-danger" href="./pages/nosotros.html">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger text-danger" href="./pages/servicios.html">SERVICIOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger text-danger" href="./pages/contacto.html">CONTACTO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger text-danger" href="./pages/ubicacion.html">UBICACIÓN</a>
+                        </li>
+                    </ul>   
+                </div>
+            </nav>            
+        </section>
     </header>
-    <main>
-        <section class="cuerpo"></section>
+    <main class="container-fluid">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="1000">
+                <img src="../image/img-inicio.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="../image/img-inicio.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../image/img-inicio.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </main>
-    <footer>
+    <footer class="container-fluid">
         <h2>Nuestras Redes</h2>
         <section>
             <ul class="pieDePagina__redes">

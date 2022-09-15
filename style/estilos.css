@@ -13,6 +13,10 @@
     font-family: sans-serif;
 }
 
+.txtcolor {
+    color: var(--Rojo-fuente);
+}
+
 .grid {
     display: grid;
     grid-template-areas: 
@@ -75,7 +79,8 @@ header {
 }
 
 main {
-    grid-area: main;
+    background-color: var(--Negro-Principal);
+    /*grid-area: main;
     flex-direction: row;
     background-color: bisque;
     background-image: url("../image/img-inicio.jpg") ;
@@ -83,7 +88,7 @@ main {
     background-size: cover;    
     padding: 20px;
     height: auto;
-    display: flex;
+    display: flex;+*/
     /*border-left: 5px solid;    
     border-right: 5px solid;    */
 }
@@ -230,7 +235,7 @@ footer section {
     src: url();
 }*/
 
-
+/*
 @media screen and (max-width: 1024px) {
 .grid {
     display: grid;
@@ -295,9 +300,9 @@ footer section {
 
    /* .cabecera__nav{
         width: 90%;
-    }   */   
-  }
-
+    }      
+  }*/
+/*
   @media screen and (max-width: 300px) {
     .grid {
         display: grid;
@@ -314,8 +319,7 @@ footer section {
     
         header {
         grid-area: header;
-        flex-direction: column;
-        /*justify-content:space-around;*/
+        flex-direction: column;        
         justify-content: start;
         align-items: center;        
         display: flex;    
@@ -330,3 +334,4 @@ footer section {
             overflow: scroll;
         }
       }
+      */

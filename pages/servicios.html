@@ -5,33 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/estilos.css">
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <title>Repuestos Lobos</title>
 </head>
-<body class="grid">
-    <header>     
-        <section class="cabecera__logo"></section>
-        <nav class="cabecera__nav">
-            <ul >
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="./nosotros.html">NOSOTROS</a></li>
-                <li><a href="#">SERVICIOS</a></li>
-                <li><a href="./contacto.html">CONTACTO</a></li>
-                <li><a href="./ubicacion.html">UBICACIÓN</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section  class="cuerpo">
-            <h2>Que hacemos</h2>
-            <p>En Repuestos Lobos estamos comprometidos con todos nuestros clientes, es por esto, que brindamos atención personalizada y los mejores precios en todos los repuestos para autos.</p>
-            <section class="servicios">
-                <article><h1>Ventas</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum expedita doloribus nostrum, maiores natus illum saepe sequi blanditiis molestias ex architecto cumque eius sapiente alias voluptatem. Cupiditate accusamus repellendus magnam?</p></article>
-                <article><h1>Ventas</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum expedita doloribus nostrum, maiores natus illum saepe sequi blanditiis molestias ex architecto cumque eius sapiente alias voluptatem. Cupiditate accusamus repellendus magnam?</p></article>
-                <article><h1>Ventas</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum expedita doloribus nostrum, maiores natus illum saepe sequi blanditiis molestias ex architecto cumque eius sapiente alias voluptatem. Cupiditate accusamus repellendus magnam?</p></article>
-            </section>            
-        </section>        
+<body>
+    <header class="container-fluid">
+        <section class="container-fluid">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <section class="cabecera__logo"></section>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo01"
+                        aria-controls="navbarTogglerDemo01"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                <span class="navbar-toggler-icon"></span>
+                </button>   
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger text-danger" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger text-danger" href="./nosotros.html">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger text-danger" href="#">SERVICIOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger text-danger" href="./contacto.html">CONTACTO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger text-danger" href="./ubicacion.html">UBICACIÓN</a>
+                        </li>
+                    </ul>   
+                </div>
+              </nav>            
+        </section>
+    </header>   
+    <main class="container-fluid">
+        <div class="row text-center">
+            <h2 class="text-white">Que hacemos</h2>
+            <p class="text-white">En Repuestos Lobos estamos comprometidos con todos nuestros clientes, es por esto, que brindamos atención personalizada y los mejores precios en todos los repuestos para autos.</p>
+        </div> 
+        <div class="row">
+            <div class="col">
+                <div class="card text-center" style="width: 18rem;">
+                    <img src="https://irp-cdn.multiscreensite.com/bdece9d1/DESKTOP/jpg/910172-repuestos-lobos-venta-de-accesorios-para-autos.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit culpa deleniti itaque reiciendis, nam molestias asperiores eveniet repellat totam dignissimos optio, quos corporis ea cupiditate cumque doloremque labore modi iusto!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-center" style="width: 18rem;">
+                    <img src="https://irp-cdn.multiscreensite.com/bdece9d1/DESKTOP/png/910170-repuestos-lobos-frenos.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat impedit illo, cum repudiandae ipsa ab animi pariatur dolores numquam harum corporis eius voluptatibus iusto quasi esse nihil commodi, iure molestiae!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-center" style="width: 18rem;">
+                    <img src="https://irp-cdn.multiscreensite.com/bdece9d1/DESKTOP/png/910170-repuestos-lobos-frenos.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae at, ipsa voluptatem quos non ut, distinctio quisquam, tempora porro velit ratione harum voluptatibus architecto nulla enim? Iusto cum quam nostrum!</p>
+                    </div>
+                  </div>
+            </div>
+        </div>  
     </main>
-    <footer>
+    <footer class="container-fluid">
         <h2>Nuestras Redes</h2>
         <section>
             <ul class="pieDePagina__redes">
